@@ -18,7 +18,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Kalana Labs - Digital Agency",
+  title: "RaDev - Digital Agency",
   description: "Kami adalah agensi digital asal Purwokerto yang fokus membangun produk IT fungsional dan estetis untuk membantu bisnis Anda berkembang secara eksponensial.",
   icons: {
     icon: "/sites/www.kalanalabs.com-f2e239fb/root-8a5edab2/favicon.ico",

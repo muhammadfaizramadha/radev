@@ -55,7 +55,7 @@ export default function Navbar() {
         >
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 z-50 transition-transform active:scale-95">
-            <span className="text-xl font-bold tracking-tight text-[#D62828]">Kalana</span>
+            <span className="text-xl font-bold tracking-tight text-[#D62828]">RaDev</span>
           </Link>
 
           {/* Desktop Nav - Clean Minimal Pill */}

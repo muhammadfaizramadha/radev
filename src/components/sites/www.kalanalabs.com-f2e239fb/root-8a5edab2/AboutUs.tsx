@@ -14,7 +14,7 @@ export default function AboutUs() {
         <div className="flex flex-col md:flex-row items-start gap-8 md:gap-16 w-full max-w-4xl mb-24 relative">
           
           <div className="flex-1 text-[#1A1A1A]/70 text-sm md:text-base leading-relaxed text-justify md:text-right">
-            Kalana Labs is a modern digital agency dedicated to delivering unmatched digital experiences. Founded with a vision to blend advanced technology and elegant design, we create exceptional digital products that elevate your brand's presence in a competitive market.
+            RaDev is a modern digital agency dedicated to delivering unmatched digital experiences. Founded with a vision to blend advanced technology and elegant design, we create exceptional digital products that elevate your brand's presence in a competitive market.
           </div>
           
           {/* Vertical Divider (Hidden on mobile) */}
@@ -24,7 +24,7 @@ export default function AboutUs() {
           <div className="block md:hidden w-full h-px bg-[#1A1A1A]/10 my-2" />
 
           <div className="flex-1 text-[#1A1A1A]/70 text-sm md:text-base leading-relaxed text-justify md:text-left">
-            We are driven by functional aesthetics and engineering perfection. Inviting people to the unique realm of superior code quality and appealing design. As a leader in the local IT industry, Kalana Labs continues to redefine technology with innovative solutions.
+            We are driven by functional aesthetics and engineering perfection. Inviting people to the unique realm of superior code quality and appealing design. As a leader in the local IT industry, RaDev continues to redefine technology with innovative solutions.
           </div>
           
         </div>

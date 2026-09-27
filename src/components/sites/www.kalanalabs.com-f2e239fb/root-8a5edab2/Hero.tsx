@@ -22,7 +22,7 @@ export default function Hero() {
       >
         <img 
           src="/images/hero-section.png?v=6" 
-          alt="Kalana Labs - Digital Solutions" 
+          alt="RaDev - Digital Solutions" 
           className="w-full h-auto max-h-[40vh] sm:max-h-[50vh] md:max-h-[60vh] object-contain object-top drop-shadow-[0_20px_50px_rgba(26,26,26,0.15)]"
         />
       </div>

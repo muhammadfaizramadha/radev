@@ -53,13 +53,13 @@ export default function Contact() {
             </p>
 
             <div className="flex flex-col gap-10">
-              <a href="mailto:kalanalabs@gmail.com" className="flex items-start gap-6 group">
+              <a href="mailto:radev@gmail.com" className="flex items-start gap-6 group">
                 <div className="w-12 h-12 rounded-full border border-[#1A1A1A]/20 flex items-center justify-center shrink-0 group-hover:bg-[#1A1A1A]/5 transition-colors">
                   <Mail strokeWidth={1.5} className="w-5 h-5 text-[#1A1A1A]" />
                 </div>
                 <div>
                   <h4 className="text-xs font-bold text-[#1A1A1A]/50 mb-1 tracking-widest uppercase">Email</h4>
-                  <p className="text-sm md:text-lg font-semibold text-[#1A1A1A] group-hover:text-[#D62828] transition-colors">kalanalabs@gmail.com</p>
+                  <p className="text-sm md:text-lg font-semibold text-[#1A1A1A] group-hover:text-[#D62828] transition-colors">radev@gmail.com</p>
                 </div>
               </a>
               

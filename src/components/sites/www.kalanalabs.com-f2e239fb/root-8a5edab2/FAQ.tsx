@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     num: "06",
-    question: "Apakah Kalana Labs melayani klien dari luar Purwokerto?",
+    question: "Apakah RaDev melayani klien dari luar Purwokerto?",
     answer: "Tentu. Kami sudah melayani klien dari berbagai kota di Indonesia secara remote. Semua proses - konsultasi, briefing, revisi, hingga serah terima - bisa dilakukan secara online melalui WhatsApp, Zoom, atau platform lain yang Anda prefer."
   }
 ];

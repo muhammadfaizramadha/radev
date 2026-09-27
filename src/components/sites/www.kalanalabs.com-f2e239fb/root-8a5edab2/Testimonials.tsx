@@ -11,13 +11,13 @@ export default function Testimonials() {
     {
       name: "Siti Rahma",
       role: "Founder Tech Startup",
-      content: "Kerjasama dengan Kalana Labs sangat profesional. Mereka paham betul UI/UX yang modern sehingga aplikasi yang dibangun sangat intuitif. Proses development juga on-time.",
+      content: "Kerjasama dengan RaDev sangat profesional. Mereka paham betul UI/UX yang modern sehingga aplikasi yang dibangun sangat intuitif. Proses development juga on-time.",
       rating: 5,
     },
     {
       name: "Ahmad Fauzi",
       role: "Kepala Desa",
-      content: "Sistem informasi desa yang dibuat sangat memudahkan pendataan warga dan transparansi anggaran. Warga sangat terbantu. Mantap Kalana Labs!",
+      content: "Sistem informasi desa yang dibuat sangat memudahkan pendataan warga dan transparansi anggaran. Warga sangat terbantu. Mantap RaDev!",
       rating: 5,
     }
   ];
@@ -35,7 +35,7 @@ export default function Testimonials() {
             Apa Kata Klien Kami
           </h2>
           <p className="text-sm md:text-lg text-[#D62828]/70">
-            Testimoni jujur dari para pemilik bisnis yang telah mempercayakan platform digital mereka bersama tim Kalana Labs.
+            Testimoni jujur dari para pemilik bisnis yang telah mempercayakan platform digital mereka bersama tim RaDev.
           </p>
         </div>
 

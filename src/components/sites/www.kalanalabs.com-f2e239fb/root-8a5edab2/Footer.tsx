@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Brand Info */}
         <div className="flex flex-col gap-4">
           <Link href="/" className="flex items-center gap-2">
-            <img src="/sites/www.kalanalabs.com-f2e239fb/root-8a5edab2/images/logo-kalana.svg" alt="Kalana Labs Logo" className="h-8" />
+            <span className="text-2xl font-bold tracking-tight text-[#D62828]">RaDev</span>
           </Link>
           <p className="text-sm text-[#D62828]/70 leading-relaxed mt-2">
             Kami adalah agensi digital asal Purwokerto yang fokus membangun produk IT fungsional dan estetis untuk membantu bisnis Anda berkembang secara eksponensial.
@@ -64,9 +64,9 @@ export default function Footer() {
           <h3 className="text-[#D62828] font-semibold tracking-wide">HUBUNGI KAMI</h3>
           <ul className="flex flex-col gap-3">
             <li>
-              <a href="mailto:kalanalabs@gmail.com" className="text-sm text-[#D62828]/70 hover:text-[#D62828] transition-colors flex items-start gap-2">
+              <a href="mailto:radev@gmail.com" className="text-sm text-[#D62828]/70 hover:text-[#D62828] transition-colors flex items-start gap-2">
                 <span className="font-semibold text-[#D62828]/80">EMAIL</span> <br />
-                kalanalabs@gmail.com
+                radev@gmail.com
               </a>
             </li>
             <li>
@@ -88,7 +88,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-[#D62828]/10 text-center text-sm text-[#D62828]/60">
-        &copy; 2026 Kalana Labs. All rights reserved.
+        &copy; 2026 RaDev. All rights reserved.
       </div>
     </footer>
   );
