@@ -29,7 +29,7 @@ export default function Hero() {
 
       {/* Subtitle - Layer 3 (Bottom, sits naturally below the image) */}
       <div 
-        className="relative z-30 w-full max-w-3xl mx-auto px-6 -mt-4 sm:mt-0 md:mt-2 shrink-0 flex justify-center text-center animate-fade-in-up"
+        className="relative z-30 w-full max-w-3xl mx-auto px-6 mt-4 sm:mt-6 md:mt-8 shrink-0 flex justify-center text-center animate-fade-in-up"
         style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
       >
         <p className="text-[#1A1A1A]/70 text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-relaxed">
