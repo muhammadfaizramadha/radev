@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[100dvh] bg-[#FFF3E0] overflow-x-hidden flex flex-col justify-center font-sans selection:bg-[#D62828] selection:text-[#FFF3E0] pt-24 pb-12">
+    <section className="relative w-full min-h-[100dvh] bg-[#FFF3E0] overflow-x-hidden flex flex-col justify-start items-center font-sans selection:bg-[#D62828] selection:text-[#FFF3E0] pt-28 md:pt-32 pb-8 md:pb-12">
       
       {/* Title - Layer 1 (Top) */}
       <div 
@@ -15,21 +15,21 @@ export default function Hero() {
         </h1>
       </div>
 
-      {/* Hero Image - Layer 2 (Middle) */}
+      {/* Hero Image - Layer 2 (Middle, heavily height-constrained on mobile) */}
       <div 
-        className="relative z-20 w-full max-w-[450px] md:max-w-[550px] mx-auto -mt-2 sm:-mt-6 md:-mt-10 lg:-mt-12 pointer-events-none px-4 flex justify-center animate-fade-in-up"
+        className="relative z-20 w-full max-w-[450px] md:max-w-[550px] mx-auto -mt-2 sm:-mt-6 md:-mt-10 lg:-mt-12 pointer-events-none px-4 flex justify-center animate-fade-in-up flex-grow"
         style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
       >
         <img 
-          src="/images/hero-section.png?v=4" 
+          src="/images/hero-section.png?v=5" 
           alt="Kalana Labs - Digital Solutions" 
-          className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(26,26,26,0.15)]"
+          className="w-full h-auto max-h-[40vh] sm:max-h-[50vh] md:max-h-[60vh] object-contain object-top drop-shadow-[0_20px_50px_rgba(26,26,26,0.15)]"
         />
       </div>
 
       {/* Subtitle - Layer 3 (Bottom, sits naturally below the image) */}
       <div 
-        className="relative z-30 w-full max-w-3xl mx-auto px-6 mt-4 md:mt-6 shrink-0 flex justify-center text-center animate-fade-in-up"
+        className="relative z-30 w-full max-w-3xl mx-auto px-6 mt-2 md:mt-4 shrink-0 flex justify-center text-center animate-fade-in-up"
         style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
       >
         <p className="text-[#1A1A1A]/70 text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-relaxed">
