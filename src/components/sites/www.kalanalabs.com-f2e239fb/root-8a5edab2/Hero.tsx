@@ -11,7 +11,7 @@ export default function Hero() {
       >
         <h1 className="text-[#1A1A1A] text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] font-bold leading-none tracking-tight">
           Website & Aplikasi.<br />
-          <span className="text-[#D62828]">Dibuat Presisi.</span>
+          <span className="text-[#D62828] font-dirtyline font-normal tracking-normal block mt-2 sm:mt-4">Dibuat Presisi.</span>
         </h1>
       </div>
 

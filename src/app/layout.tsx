@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Lexend_Deca, Outfit } from "next/font/google";
+import { Plus_Jakarta_Sans, Lexend_Deca, Outfit, Shrikhand } from "next/font/google";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -15,6 +15,12 @@ const lexendDeca = Lexend_Deca({
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
+});
+
+const shrikhand = Shrikhand({
+  variable: "--font-dirtyline",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -36,7 +42,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakartaSans.variable} ${lexendDeca.variable} ${outfit.variable} h-full antialiased`}
+      className={`${plusJakartaSans.variable} ${lexendDeca.variable} ${outfit.variable} ${shrikhand.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
         <Navbar />
