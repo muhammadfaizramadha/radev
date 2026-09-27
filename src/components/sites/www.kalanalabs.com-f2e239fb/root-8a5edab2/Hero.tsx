@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[100dvh] bg-[#FFF3E0] overflow-x-hidden flex flex-col justify-start items-center font-sans selection:bg-[#D62828] selection:text-[#FFF3E0] pt-28 md:pt-32 pb-8 md:pb-12">
+    <section className="relative w-full min-h-[100dvh] bg-[#FFF3E0] overflow-x-hidden flex flex-col justify-start items-center font-sans selection:bg-[#D62828] selection:text-[#FFF3E0] pt-20 md:pt-24 pb-8 md:pb-12">
       
       {/* Title - Layer 1 (Top) */}
       <div 
@@ -21,7 +21,7 @@ export default function Hero() {
         style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
       >
         <img 
-          src="/images/hero-section.png?v=5" 
+          src="/images/hero-section.png?v=6" 
           alt="Kalana Labs - Digital Solutions" 
           className="w-full h-auto max-h-[40vh] sm:max-h-[50vh] md:max-h-[60vh] object-contain object-top drop-shadow-[0_20px_50px_rgba(26,26,26,0.15)]"
         />
