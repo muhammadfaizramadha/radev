@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { Globe, Mail, MessageCircle, Share2 } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -48,10 +48,10 @@ export default function Hero() {
           </div>
 
           <div className="flex items-center gap-6">
-            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><Instagram className="w-5 h-5" /></Link>
-            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><Twitter className="w-5 h-5" /></Link>
-            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><Facebook className="w-5 h-5" /></Link>
-            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><Linkedin className="w-5 h-5" /></Link>
+            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><Globe className="w-5 h-5" /></Link>
+            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><Share2 className="w-5 h-5" /></Link>
+            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><Mail className="w-5 h-5" /></Link>
+            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><MessageCircle className="w-5 h-5" /></Link>
           </div>
 
         </div>
