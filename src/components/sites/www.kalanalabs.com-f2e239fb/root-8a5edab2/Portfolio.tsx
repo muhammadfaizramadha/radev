@@ -23,7 +23,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section id="portofolio" className="py-24 bg-[#0b0c10] text-white font-sans overflow-hidden">
+    <section id="portofolio" className="py-24 bg-[#FFF3E0] text-[#D62828] font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header */}
@@ -31,7 +31,7 @@ export default function Portfolio() {
           <h2 className="text-4xl md:text-5xl font-bold font-heading leading-tight mb-6">
             Karya yang Pernah Kami Bangun
           </h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-[#D62828]/70">
             Beberapa hasil karya terbaik kami dalam membantu klien mencapai tujuan digital mereka.
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function Portfolio() {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className={`group relative overflow-hidden rounded-3xl bg-[#1a1b23] border border-white/10 aspect-[16/10] ${index === projects.length - 1 && projects.length % 2 !== 0 ? 'md:col-span-2 md:aspect-[21/9]' : ''}`}
+              className={`group relative overflow-hidden rounded-3xl bg-[#1a1b23] border border-[#D62828]/10 aspect-[16/10] ${index === projects.length - 1 && projects.length % 2 !== 0 ? 'md:col-span-2 md:aspect-[21/9]' : ''}`}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b0c10] to-transparent opacity-60 z-10" />
               <img 
@@ -50,7 +50,7 @@ export default function Portfolio() {
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute bottom-0 left-0 p-8 z-20">
-                <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                <h3 className="text-2xl font-bold text-[#D62828] group-hover:text-blue-400 transition-colors">
                   {project.name}
                 </h3>
               </div>

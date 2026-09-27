@@ -1,55 +1,57 @@
+"use client";
+
 import { Monitor, Smartphone, PenTool, Database } from 'lucide-react';
 
 const services = [
   {
-    icon: <Monitor className="w-8 h-8 text-blue-600" />,
+    icon: <Monitor strokeWidth={1.5} className="w-8 h-8 text-[#D62828]" />,
     title: 'Web Development',
-    description: 'Kami membangun website profesional, cepat, responsif, dan ramah SEO untuk memperkuat kehadiran online bisnis Anda.',
+    description: 'Kami membangun website profesional, responsif, dan fungsional untuk menumbuhkan kehadiran digital Anda.',
   },
   {
-    icon: <PenTool className="w-8 h-8 text-blue-600" />,
+    icon: <PenTool strokeWidth={1.5} className="w-8 h-8 text-[#D62828]" />,
     title: 'UI/UX Design',
-    description: 'Rancangan antarmuka yang menarik, modern, dan intuitif untuk memberikan pengalaman terbaik bagi pengguna aplikasi Anda.',
+    description: 'Antarmuka yang bersih, modern, dan berfokus pada kemudahan pengguna.',
   },
   {
-    icon: <Smartphone className="w-8 h-8 text-blue-600" />,
+    icon: <Smartphone strokeWidth={1.5} className="w-8 h-8 text-[#D62828]" />,
     title: 'Mobile Apps',
-    description: 'Pengembangan aplikasi mobile berbasis Android maupun iOS dengan performa tinggi menggunakan teknologi terkini.',
+    description: 'Pengalaman native yang cepat dan mulus untuk iOS dan Android.',
   },
   {
-    icon: <Database className="w-8 h-8 text-blue-600" />,
+    icon: <Database strokeWidth={1.5} className="w-8 h-8 text-[#D62828]" />,
     title: 'Sistem Informasi',
-    description: 'Pembuatan platform digital khusus (custom) yang disesuaikan untuk mengelola data dan operasional bisnis Anda.',
+    description: 'Platform khusus yang disederhanakan untuk mengelola bisnis Anda.',
   },
 ];
 
 export default function Services() {
   return (
-    <section id="layanan" className="py-24 bg-[#f8f9fc] text-[#0b0c10] font-sans">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="layanan" className="py-32 bg-[#FFF3E0] text-[#D62828] font-sans selection:bg-[#D62828] selection:text-[#FFF3E0]">
+      <div className="max-w-6xl mx-auto px-6 md:px-12">
         
-        {/* Header */}
-        <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-heading leading-tight mb-6">
-            Solusi Digital Lengkap untuk Bisnis Anda
+        {/* Header - Simple typography, heavy whitespace */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-24">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading leading-[1.1] tracking-tight max-w-xl">
+            Sederhana di luar.<br />Kuat di dalam.
           </h2>
-          <p className="text-lg text-gray-600">
-            Kami menawarkan berbagai layanan pengembangan produk digital yang dirancang khusus untuk memenuhi kebutuhan unik industri Anda.
+          <p className="text-lg md:text-xl text-[#D62828]/70 max-w-sm leading-relaxed font-medium pb-2">
+            Layanan kami berfokus pada esensi. Tanpa fitur berlebih.
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Services Grid - Clean lines, no boxes, just typography and space */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-start"
+              className="group flex flex-col items-start border-t border-[#D62828]/10 pt-8 transition-colors duration-500 hover:border-[#D62828]/40"
             >
-              <div className="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="mb-6 transform transition-transform duration-500 group-hover:scale-110 origin-left">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-              <p className="text-gray-600 leading-relaxed flex-grow">
+              <h3 className="text-2xl font-bold mb-3 tracking-tight">{service.title}</h3>
+              <p className="text-[#D62828]/70 leading-relaxed text-lg font-medium">
                 {service.description}
               </p>
             </div>

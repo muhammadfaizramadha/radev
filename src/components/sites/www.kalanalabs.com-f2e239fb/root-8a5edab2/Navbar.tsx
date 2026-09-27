@@ -29,29 +29,26 @@ export default function Navbar() {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "py-3" : "py-5"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
+        scrolled ? "py-4" : "py-6"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div 
-          className={`flex items-center justify-between rounded-full transition-all duration-300 px-6 ${
+          className={`flex items-center justify-between rounded-full transition-all duration-500 ease-out px-6 ${
             scrolled 
-              ? "bg-[#0b0c10]/80 backdrop-blur-xl border border-white/10 shadow-2xl shadow-black/50 py-3" 
+              ? "bg-[#FFF3E0]/70 backdrop-blur-xl border border-[#D62828]/10 shadow-[0_8px_30px_rgb(214,40,40,0.06)] py-3" 
               : "bg-transparent border border-transparent py-2"
           }`}
         >
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 z-50">
-            <img 
-              src="/sites/www.kalanalabs.com-f2e239fb/root-8a5edab2/images/logo-kalana.svg" 
-              alt="Kalana Labs Logo" 
-              className="h-7 w-auto" 
-            />
+          <Link href="/" className="flex items-center gap-2 z-50 transition-transform active:scale-95">
+            {/* Note: In a real scenario, you'd want a red/dark version of the logo here. For now, we apply CSS filters to make it red or text. */}
+            <span className="text-xl font-bold tracking-tight text-[#D62828]">Kalana</span>
           </Link>
 
-          {/* Desktop Nav - Pill Style */}
-          <nav className="hidden md:flex items-center gap-1 bg-white/5 rounded-full p-1 border border-white/10 backdrop-blur-sm">
+          {/* Desktop Nav - Clean Minimal Pill */}
+          <nav className="hidden md:flex items-center gap-1 bg-[#D62828]/5 rounded-full p-1 border border-[#D62828]/10 backdrop-blur-md">
             {links.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -60,8 +57,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
                     isActive 
-                      ? "bg-white text-[#0b0c10] shadow-md shadow-white/10" 
-                      : "text-white/80 hover:text-white hover:bg-white/10"
+                      ? "bg-[#D62828] text-[#FFF3E0] shadow-sm shadow-[#D62828]/20" 
+                      : "text-[#D62828]/70 hover:text-[#D62828] hover:bg-[#D62828]/10"
                   }`}
                 >
                   {link.name}
@@ -74,7 +71,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center">
             <Link 
               href="/kontak" 
-              className="px-6 py-2.5 bg-blue-600 text-white rounded-full text-sm font-bold hover:bg-blue-500 transition-colors shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)]"
+              className="px-6 py-2.5 bg-[#D62828] text-[#FFF3E0] rounded-full text-sm font-bold hover:bg-[#b01e1e] transition-colors active:scale-95 shadow-md shadow-[#D62828]/20"
             >
               Mulai Proyek
             </Link>
@@ -82,7 +79,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button 
-            className="md:hidden text-white z-50 p-2 bg-white/10 rounded-full border border-white/10" 
+            className="md:hidden text-[#D62828] z-50 p-2 bg-[#D62828]/5 rounded-full border border-[#D62828]/10 active:scale-95 transition-transform" 
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -92,7 +89,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       <div 
-        className={`md:hidden absolute top-full left-4 right-4 mt-2 bg-[#12141d]/95 backdrop-blur-xl border border-white/10 rounded-3xl p-6 flex flex-col gap-2 shadow-2xl transition-all duration-300 origin-top ${
+        className={`md:hidden absolute top-full left-4 right-4 mt-2 bg-[#FFF3E0]/95 backdrop-blur-xl border border-[#D62828]/10 rounded-3xl p-6 flex flex-col gap-2 shadow-[0_20px_40px_rgb(214,40,40,0.08)] transition-all duration-300 origin-top ${
           isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
         }`}
       >
@@ -105,19 +102,19 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className={`px-5 py-4 rounded-2xl text-base font-semibold transition-all ${
                 isActive 
-                  ? "bg-white/10 text-white" 
-                  : "text-white/70 hover:bg-white/5 hover:text-white"
+                  ? "bg-[#D62828]/10 text-[#D62828]" 
+                  : "text-[#D62828]/70 hover:bg-[#D62828]/5 hover:text-[#D62828]"
               }`}
             >
               {link.name}
             </Link>
           );
         })}
-        <div className="pt-4 mt-2 border-t border-white/10">
+        <div className="pt-4 mt-2 border-t border-[#D62828]/10">
           <Link 
             href="/kontak" 
             onClick={() => setIsOpen(false)}
-            className="flex items-center justify-center w-full px-6 py-4 bg-blue-600 text-white rounded-2xl text-base font-bold shadow-lg"
+            className="flex items-center justify-center w-full px-6 py-4 bg-[#D62828] text-[#FFF3E0] rounded-2xl text-base font-bold shadow-lg shadow-[#D62828]/20"
           >
             Mulai Proyek
           </Link>

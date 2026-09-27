@@ -10,7 +10,7 @@ import Contact from '@/components/sites/www.kalanalabs.com-f2e239fb/root-8a5edab
 
 export default function Page() {
   return (
-    <div className="flex flex-col bg-[#0b0c10]">
+    <div className="flex flex-col bg-[#FFF3E0]">
       <Hero />
       <Clients />
       <AboutUs />

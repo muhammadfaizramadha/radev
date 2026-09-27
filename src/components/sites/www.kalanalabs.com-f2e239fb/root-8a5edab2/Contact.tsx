@@ -20,7 +20,7 @@ export default function Contact() {
           
           <div className="relative z-10 px-8 py-16 md:p-20 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
             <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-white leading-tight mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#D62828] leading-tight mb-6">
                 Siap Punya Website yang Bikin Bisnis Anda Lebih Dipercaya?
               </h2>
               <p className="text-blue-100 text-lg">
@@ -37,7 +37,7 @@ export default function Contact() {
               </Link>
               <Link 
                 href="#paket"
-                className="px-8 py-4 bg-transparent border-2 border-white/30 text-white rounded-full font-bold hover:bg-white/10 transition-colors whitespace-nowrap text-center"
+                className="px-8 py-4 bg-transparent border-2 border-white/30 text-[#D62828] rounded-full font-bold hover:bg-[#D62828]/10 transition-colors whitespace-nowrap text-center"
               >
                 Lihat Paket Harga
               </Link>
@@ -59,31 +59,31 @@ export default function Contact() {
 
             <div className="flex flex-col gap-8">
               <a href="mailto:kalanalabs@gmail.com" className="flex items-start gap-4 group">
-                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center shrink-0 group-hover:bg-blue-600 transition-colors">
-                  <Mail className="w-5 h-5 text-blue-600 group-hover:text-white transition-colors" />
+                <div className="w-12 h-12 rounded-full bg-[#D62828] flex items-center justify-center shrink-0 group-hover:bg-[#D62828] transition-colors">
+                  <Mail className="w-5 h-5 text-blue-600 group-hover:text-[#D62828] transition-colors" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-gray-400 mb-1 tracking-wider">EMAIL</h4>
+                  <h4 className="text-sm font-bold text-[#D62828]/70 mb-1 tracking-wider">EMAIL</h4>
                   <p className="text-lg font-semibold group-hover:text-blue-600 transition-colors">kalanalabs@gmail.com</p>
                 </div>
               </a>
               
               <a href="https://wa.me/6285196811722" className="flex items-start gap-4 group">
-                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center shrink-0 group-hover:bg-blue-600 transition-colors">
-                  <Phone className="w-5 h-5 text-blue-600 group-hover:text-white transition-colors" />
+                <div className="w-12 h-12 rounded-full bg-[#D62828] flex items-center justify-center shrink-0 group-hover:bg-[#D62828] transition-colors">
+                  <Phone className="w-5 h-5 text-blue-600 group-hover:text-[#D62828] transition-colors" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-gray-400 mb-1 tracking-wider">WHATSAPP</h4>
+                  <h4 className="text-sm font-bold text-[#D62828]/70 mb-1 tracking-wider">WHATSAPP</h4>
                   <p className="text-lg font-semibold group-hover:text-blue-600 transition-colors">+62 851 9681 1722</p>
                 </div>
               </a>
 
               <div className="flex items-start gap-4 group cursor-default">
-                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 rounded-full bg-[#D62828] flex items-center justify-center shrink-0">
                   <MapPin className="w-5 h-5 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-gray-400 mb-1 tracking-wider">LOKASI</h4>
+                  <h4 className="text-sm font-bold text-[#D62828]/70 mb-1 tracking-wider">LOKASI</h4>
                   <p className="text-lg font-semibold">Purwokerto, Jawa Tengah, Indonesia</p>
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function Contact() {
                       onClick={() => setSelectedService(service)}
                       className={`px-6 py-3 rounded-full text-sm font-semibold transition-colors border ${
                         selectedService === service 
-                        ? 'bg-[#0b0c10] text-white border-[#0b0c10]' 
+                        ? 'bg-[#FFF3E0] text-[#D62828] border-[#0b0c10]' 
                         : 'bg-white text-gray-600 border-gray-200 hover:border-gray-400'
                       }`}
                     >
@@ -143,14 +143,14 @@ export default function Contact() {
                   disabled={!selectedService}
                   className={`w-full sm:w-auto px-8 py-4 rounded-xl font-bold transition-all ${
                     selectedService 
-                    ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-600/30' 
-                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                    ? 'bg-[#D62828] text-[#D62828] hover:bg-[#D62828] shadow-lg shadow-blue-600/30' 
+                    : 'bg-gray-200 text-[#D62828]/70 cursor-not-allowed'
                   }`}
                 >
                   Kirim via WhatsApp
                 </button>
                 {!selectedService && (
-                  <p className="text-sm text-gray-400">* Silakan pilih Layanan yang Dibutuhkan terlebih dahulu</p>
+                  <p className="text-sm text-[#D62828]/70">* Silakan pilih Layanan yang Dibutuhkan terlebih dahulu</p>
                 )}
               </div>
             </form>

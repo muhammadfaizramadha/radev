@@ -70,7 +70,7 @@ export default function FAQ() {
                     <span className="text-blue-400 font-heading text-xl">{faq.num}</span>
                     {faq.question}
                   </span>
-                  <ChevronDown className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180 text-blue-600' : ''}`} />
+                  <ChevronDown className={`w-5 h-5 text-[#D62828]/70 transition-transform duration-300 ${isOpen ? 'rotate-180 text-blue-600' : ''}`} />
                 </button>
                 <div 
                   className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
