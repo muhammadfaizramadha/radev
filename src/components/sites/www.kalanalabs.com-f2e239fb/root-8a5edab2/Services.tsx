@@ -32,10 +32,10 @@ export default function Services() {
         
         {/* Header - Simple typography, heavy whitespace */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-24">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading leading-[1.1] tracking-tight max-w-xl">
+          <h2 className="text-2xl md:text-5xl lg:text-6xl font-bold font-heading leading-[1.1] tracking-tight max-w-xl">
             Sederhana di luar.<br />Kuat di dalam.
           </h2>
-          <p className="text-lg md:text-xl text-[#D62828]/70 max-w-sm leading-relaxed font-medium pb-2">
+          <p className="text-sm md:text-xl text-[#D62828]/70 max-w-sm leading-relaxed font-medium pb-2">
             Layanan kami berfokus pada esensi. Tanpa fitur berlebih.
           </p>
         </div>
@@ -50,8 +50,8 @@ export default function Services() {
               <div className="mb-6 transform transition-transform duration-500 group-hover:scale-110 origin-left">
                 {service.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-3 tracking-tight">{service.title}</h3>
-              <p className="text-[#D62828]/70 leading-relaxed text-lg font-medium">
+              <h3 className="text-lg md:text-2xl font-bold mb-3 tracking-tight">{service.title}</h3>
+              <p className="text-[#D62828]/70 leading-relaxed text-sm md:text-lg font-medium">
                 {service.description}
               </p>
             </div>

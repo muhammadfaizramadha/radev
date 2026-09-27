@@ -31,10 +31,10 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-heading leading-tight mb-6">
+          <h2 className="text-2xl md:text-5xl font-bold font-heading leading-tight mb-6">
             Apa Kata Klien Kami
           </h2>
-          <p className="text-lg text-[#D62828]/70">
+          <p className="text-sm md:text-lg text-[#D62828]/70">
             Testimoni jujur dari para pemilik bisnis yang telah mempercayakan platform digital mereka bersama tim Kalana Labs.
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function Testimonials() {
               </p>
               
               <div className="flex items-center gap-4 mt-auto">
-                <div className="w-12 h-12 rounded-full bg-[#D62828]/20 flex items-center justify-center text-[#D62828] font-bold text-xl uppercase">
+                <div className="w-12 h-12 rounded-full bg-[#D62828]/20 flex items-center justify-center text-[#D62828] font-bold text-base md:text-xl uppercase">
                   {testimonial.name.charAt(0)}
                 </div>
                 <div>

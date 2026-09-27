@@ -16,14 +16,14 @@ export default function Clients() {
       <div className="relative w-full flex overflow-hidden whitespace-nowrap mask-image-linear-edges">
         <div className="flex animate-[marquee_30s_linear_infinite] gap-16 px-8">
           {clients.concat(clients).map((client, index) => (
-            <div key={index} className="flex items-center justify-center min-w-max text-2xl font-black font-heading text-[#D62828]/80">
+            <div key={index} className="flex items-center justify-center min-w-max text-lg md:text-2xl font-black font-heading text-[#D62828]/80">
               {client}
             </div>
           ))}
         </div>
         <div className="absolute top-0 flex animate-[marquee2_30s_linear_infinite] gap-16 px-8" style={{ left: '100%' }}>
           {clients.concat(clients).map((client, index) => (
-            <div key={index} className="flex items-center justify-center min-w-max text-2xl font-black font-heading text-[#D62828]/80">
+            <div key={index} className="flex items-center justify-center min-w-max text-lg md:text-2xl font-black font-heading text-[#D62828]/80">
               {client}
             </div>
           ))}

@@ -48,7 +48,7 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-6">
         
         <div className="flex flex-col items-center text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-heading leading-tight mb-6">
+          <h2 className="text-2xl md:text-5xl font-bold font-heading leading-tight mb-6">
             Pertanyaan yang Sering Diajukan
           </h2>
         </div>
@@ -66,8 +66,8 @@ export default function FAQ() {
                   className="w-full text-left px-6 py-6 flex items-center justify-between focus:outline-none"
                   aria-expanded={isOpen}
                 >
-                  <span className="flex items-center gap-4 text-lg font-bold">
-                    <span className="text-[#D62828] font-heading text-xl">{faq.num}</span>
+                  <span className="flex items-center gap-4 text-sm md:text-lg font-bold">
+                    <span className="text-[#D62828] font-heading text-base md:text-xl">{faq.num}</span>
                     {faq.question}
                   </span>
                   <ChevronDown className={`w-5 h-5 text-[#D62828]/70 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#D62828]' : ''}`} />

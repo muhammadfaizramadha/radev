@@ -23,7 +23,7 @@ export default function Portfolio() {
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
-          <h2 className="text-[#1A1A1A] text-2xl md:text-3xl font-bold tracking-[0.2em] uppercase">
+          <h2 className="text-[#1A1A1A] text-lg md:text-3xl font-bold tracking-[0.2em] uppercase">
             KALANA<br />COLLECTION
           </h2>
           

@@ -21,10 +21,10 @@ export default function Contact() {
           
           <div className="relative z-10 px-8 py-16 md:p-20 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left">
             <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1A1A1A] leading-[1.1] tracking-tight mb-6">
+              <h2 className="text-xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1A1A1A] leading-[1.1] tracking-tight mb-6">
                 Siap Punya Website yang Bikin Bisnis Anda Lebih Dipercaya?
               </h2>
-              <p className="text-[#1A1A1A]/70 text-lg md:text-xl font-medium">
+              <p className="text-[#1A1A1A]/70 text-sm md:text-xl font-medium">
                 Kami merancang produk digital yang profesional, presisi, dan sesuai dengan visi Anda. Mulai dengan konsultasi gratis tanpa komitmen.
               </p>
             </div>
@@ -45,10 +45,10 @@ export default function Contact() {
           
           {/* Left: Contact Info */}
           <div className="lg:col-span-2 flex flex-col">
-            <h2 className="text-4xl md:text-5xl font-bold font-heading text-[#1A1A1A] leading-[1.1] tracking-tight mb-6 text-balance">
+            <h2 className="text-2xl md:text-5xl font-bold font-heading text-[#1A1A1A] leading-[1.1] tracking-tight mb-6 text-balance">
               Mari Mulai<br />Sesuatu yang Hebat.
             </h2>
-            <p className="text-lg text-[#1A1A1A]/70 font-medium mb-16 leading-relaxed">
+            <p className="text-sm md:text-lg text-[#1A1A1A]/70 font-medium mb-16 leading-relaxed">
               Ceritakan kebutuhan bisnis Anda. Tim kami siap memberikan solusi elegan untuk pertumbuhan digital Anda.
             </p>
 
@@ -59,7 +59,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-xs font-bold text-[#1A1A1A]/50 mb-1 tracking-widest uppercase">Email</h4>
-                  <p className="text-lg font-semibold text-[#1A1A1A] group-hover:text-[#D62828] transition-colors">kalanalabs@gmail.com</p>
+                  <p className="text-sm md:text-lg font-semibold text-[#1A1A1A] group-hover:text-[#D62828] transition-colors">kalanalabs@gmail.com</p>
                 </div>
               </a>
               
@@ -69,7 +69,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-xs font-bold text-[#1A1A1A]/50 mb-1 tracking-widest uppercase">WhatsApp</h4>
-                  <p className="text-lg font-semibold text-[#1A1A1A] group-hover:text-[#D62828] transition-colors">+62 851 9681 1722</p>
+                  <p className="text-sm md:text-lg font-semibold text-[#1A1A1A] group-hover:text-[#D62828] transition-colors">+62 851 9681 1722</p>
                 </div>
               </a>
 
@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-xs font-bold text-[#1A1A1A]/50 mb-1 tracking-widest uppercase">Lokasi</h4>
-                  <p className="text-lg font-semibold text-[#1A1A1A]">Purwokerto, Jawa Tengah</p>
+                  <p className="text-sm md:text-lg font-semibold text-[#1A1A1A]">Purwokerto, Jawa Tengah</p>
                 </div>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function Contact() {
 
           {/* Right: Form */}
           <div className="lg:col-span-3">
-            <h3 className="text-2xl font-bold font-heading text-[#1A1A1A] mb-2 tracking-tight">Ceritakan Kebutuhan Anda</h3>
+            <h3 className="text-lg md:text-2xl font-bold font-heading text-[#1A1A1A] mb-2 tracking-tight">Ceritakan Kebutuhan Anda</h3>
             <p className="text-[#1A1A1A]/60 font-medium mb-10">Isi form di bawah ini dan kami akan segera menghubungi Anda via WhatsApp.</p>
             
             <form className="flex flex-col gap-8" onSubmit={(e) => e.preventDefault()}>
