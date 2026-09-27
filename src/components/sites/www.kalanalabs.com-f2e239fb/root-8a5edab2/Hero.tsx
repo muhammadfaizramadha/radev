@@ -2,11 +2,14 @@
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[90vh] bg-[#FFF3E0] overflow-hidden flex flex-col items-center justify-center font-sans selection:bg-[#D62828] selection:text-[#FFF3E0] pt-24 md:pt-32 pb-16">
+    <section className="relative w-full h-[100dvh] min-h-[600px] bg-[#FFF3E0] overflow-hidden flex flex-col font-sans selection:bg-[#D62828] selection:text-[#FFF3E0]">
       
-      {/* Title - Layer 1 (Background) */}
+      {/* Spacer for navbar to prevent overlap at the very top */}
+      <div className="h-28 md:h-32 shrink-0" />
+
+      {/* Title - Layer 1 (Top) */}
       <div 
-        className="relative z-10 w-full px-6 flex justify-center text-center animate-fade-in-up" 
+        className="relative z-10 w-full px-4 shrink-0 flex justify-center text-center animate-fade-in-up"
         style={{ animation: 'fade-in-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards' }}
       >
         <h1 className="text-[#1A1A1A] text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] font-bold leading-[1.05] tracking-tight">
@@ -15,25 +18,25 @@ export default function Hero() {
         </h1>
       </div>
 
-      {/* Hero Subject Image - Layer 2 (Foreground) overlapping the title slightly */}
-      {/* Negative margin (-mt-4 to -mt-16) guarantees a consistent slight overlap across all screen sizes and zooms */}
+      {/* Hero Image - Layer 2 (Middle, Flex-grow for dynamic sizing) */}
+      {/* Negative top margin ensures it overlaps the title slightly on all screens */}
       <div 
-        className="relative z-20 w-[85%] sm:w-[65%] md:w-[50%] lg:w-[40%] max-w-[550px] -mt-4 sm:-mt-8 md:-mt-12 lg:-mt-16 flex justify-center animate-fade-in-up pointer-events-none" 
+        className="relative z-20 w-full max-w-[500px] md:max-w-[650px] mx-auto flex-grow -mt-4 sm:-mt-8 md:-mt-12 lg:-mt-16 pointer-events-none px-4 flex justify-center animate-fade-in-up"
         style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
       >
         <img 
           src="/images/hero-section.png" 
           alt="Kalana Labs - Digital Solutions" 
-          className="w-full h-auto object-contain drop-shadow-[0_20px_50px_rgba(26,26,26,0.15)]"
+          className="w-full h-full object-contain object-top drop-shadow-[0_20px_50px_rgba(26,26,26,0.15)]"
         />
       </div>
 
-      {/* Subtitle - Layer 3 (Below Image) */}
+      {/* Subtitle - Layer 3 (Bottom, ALWAYS visible above the fold) */}
       <div 
-        className="relative z-30 w-full max-w-2xl px-6 mt-4 md:mt-8 flex justify-center text-center animate-fade-in-up"
+        className="relative z-30 w-full max-w-3xl mx-auto px-6 pb-8 md:pb-12 shrink-0 flex justify-center text-center animate-fade-in-up"
         style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
       >
-        <p className="text-[#1A1A1A]/70 text-lg md:text-xl font-medium leading-relaxed">
+        <p className="text-[#1A1A1A]/70 text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-relaxed">
           Kembangkan bisnis Anda di era digital. Dari landing page elegan, toko online, hingga sistem informasi khusus, kami merancangnya untuk performa maksimal.
         </p>
       </div>
