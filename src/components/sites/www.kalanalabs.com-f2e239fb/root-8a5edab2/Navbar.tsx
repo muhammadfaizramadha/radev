@@ -11,10 +11,10 @@ export default function Navbar() {
 
   const links = [
     { name: "Beranda", href: "/" },
-    { name: "Tentang Kami", href: "/tentang-kami" },
     { name: "Layanan", href: "/layanan" },
     { name: "Portofolio", href: "/portofolio" },
     { name: "Kontak", href: "/kontak" },
+    { name: "Tentang Kami", href: "/tentang-kami" },
   ];
 
   return (
