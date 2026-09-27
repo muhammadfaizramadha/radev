@@ -47,3 +47,72 @@ next-env.d.ts
 
 # Local temp files
 temp/
+
+# --- Standard Global Programmer Conventions ---
+
+# Logs
+logs/
+*.log
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Cache
+.eslintcache
+.stylelintcache
+.npm/
+.yarn/
+.pnpm-store/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Mac/Windows OS Files
+Desktop.ini
+`$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# --- Website Cloner Dependencies & Temp Files ---
+# Prevent pushing intermediate research, design refs, and asset scripts
+docs/research/
+docs/design-references/
+scripts/download-assets-*.js
+scripts/extract-assets.js
+scripts/temp/
+
+# External dynamically downloaded skills
+.agents/skills/taste-skill/
+.agents/skills/temp/
+
+# --- AI & Template Documentation Files ---
+AGENTS.md
+CLAUDE.md
+CONTRIBUTING.md
+CHANGELOG.md
+SECURITY.md
+.agents/
+.claude/
+
+# --- Extraneous Template Boilerplate & Non-Source Files ---
+.github/
+docs/
+scripts/
+Dockerfile
+Dockerfile.dev
+docker-compose.yml
+.dockerignore
+LICENSE
