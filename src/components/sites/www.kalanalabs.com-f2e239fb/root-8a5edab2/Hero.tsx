@@ -24,7 +24,7 @@ export default function Hero() {
         style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
       >
         <img 
-          src="/images/hero-section.png?v=2" 
+          src="/images/hero-section.png?v=3" 
           alt="Kalana Labs - Digital Solutions" 
           className="w-full h-full object-contain object-top drop-shadow-[0_20px_50px_rgba(26,26,26,0.15)]"
         />
