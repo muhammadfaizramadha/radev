@@ -2,26 +2,26 @@
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[100dvh] min-h-[600px] bg-[#FFF3E0] overflow-hidden flex flex-col font-sans selection:bg-[#D62828] selection:text-[#FFF3E0]">
+    <section className="relative w-full min-h-[100dvh] bg-[#FFF3E0] overflow-x-hidden flex flex-col font-sans selection:bg-[#D62828] selection:text-[#FFF3E0]">
       
       {/* Spacer for navbar to prevent overlap at the very top */}
-      <div className="h-28 md:h-32 shrink-0" />
+      <div className="h-24 shrink-0" />
 
       {/* Title - Layer 1 (Top) */}
       <div 
         className="relative z-10 w-full px-4 shrink-0 flex justify-center text-center animate-fade-in-up"
         style={{ animation: 'fade-in-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards' }}
       >
-        <h1 className="text-[#1A1A1A] text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] font-bold leading-[1.05] tracking-tight">
+        <h1 className="text-[#1A1A1A] text-5xl sm:text-6xl md:text-7xl lg:text-[6rem] font-bold leading-[1.05] tracking-tight">
           Website & Aplikasi.<br />
           <span className="text-[#D62828]">Dibuat Presisi.</span>
         </h1>
       </div>
 
       {/* Hero Image - Layer 2 (Middle, Flex-grow for dynamic sizing) */}
-      {/* Negative top margin ensures it overlaps the title slightly on all screens */}
+      {/* min-h-0 is critical so the flex container allows the image to shrink on landscape screens without pushing text out */}
       <div 
-        className="relative z-20 w-full max-w-[500px] md:max-w-[650px] mx-auto flex-grow -mt-4 sm:-mt-8 md:-mt-12 lg:-mt-16 pointer-events-none px-4 flex justify-center animate-fade-in-up"
+        className="relative z-20 w-full max-w-[500px] md:max-w-[650px] mx-auto flex-grow min-h-0 -mt-4 sm:-mt-8 md:-mt-12 lg:-mt-16 pointer-events-none px-4 flex justify-center animate-fade-in-up"
         style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
       >
         <img 
