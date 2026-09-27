@@ -16,10 +16,6 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Column: Text Content */}
         <div className="flex flex-col items-start text-left">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-blue-300 mb-8 backdrop-blur-sm">
-            Agensi Digital & IT Solution
-          </div>
-          
           <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6 font-heading tracking-tight">
             Ubah Ide Jadi Produk Digital Hebat
           </h1>

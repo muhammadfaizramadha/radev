@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   }
 };
 
+import Navbar from "@/components/sites/www.kalanalabs.com-f2e239fb/root-8a5edab2/Navbar";
+import Footer from "@/components/sites/www.kalanalabs.com-f2e239fb/root-8a5edab2/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,7 +38,13 @@ export default function RootLayout({
       lang="en"
       className={`${plusJakartaSans.variable} ${lexendDeca.variable} ${outfit.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <Navbar />
+        <main className="flex-grow pt-20">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
