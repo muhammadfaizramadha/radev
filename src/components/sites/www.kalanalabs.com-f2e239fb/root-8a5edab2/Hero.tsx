@@ -17,7 +17,7 @@ export default function Hero() {
 
       {/* Hero Image - Layer 2 (Middle, heavily height-constrained on mobile) */}
       <div 
-        className="relative z-20 w-full max-w-[450px] md:max-w-[550px] mx-auto -mt-2 sm:-mt-6 md:-mt-10 lg:-mt-12 pointer-events-none px-4 flex justify-center animate-fade-in-up flex-grow"
+        className="relative z-20 w-full max-w-[450px] md:max-w-[550px] mx-auto -mt-8 sm:-mt-10 md:-mt-10 lg:-mt-12 pointer-events-none px-4 flex justify-center animate-fade-in-up flex-grow"
         style={{ animationDelay: '0.2s', animationFillMode: 'both' }}
       >
         <img 
@@ -29,7 +29,7 @@ export default function Hero() {
 
       {/* Subtitle - Layer 3 (Bottom, sits naturally below the image) */}
       <div 
-        className="relative z-30 w-full max-w-3xl mx-auto px-6 mt-2 md:mt-4 shrink-0 flex justify-center text-center animate-fade-in-up"
+        className="relative z-30 w-full max-w-3xl mx-auto px-6 -mt-2 sm:mt-2 md:mt-6 shrink-0 flex justify-center text-center animate-fade-in-up"
         style={{ animationDelay: '0.4s', animationFillMode: 'both' }}
       >
         <p className="text-[#1A1A1A]/70 text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-relaxed">
