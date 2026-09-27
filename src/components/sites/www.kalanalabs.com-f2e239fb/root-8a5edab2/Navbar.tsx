@@ -19,6 +19,18 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Handle body scroll lock
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   const links = [
     { name: "Beranda", href: "/" },
     { name: "Layanan", href: "/layanan" },
@@ -43,7 +55,6 @@ export default function Navbar() {
         >
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 z-50 transition-transform active:scale-95">
-            {/* Note: In a real scenario, you'd want a red/dark version of the logo here. For now, we apply CSS filters to make it red or text. */}
             <span className="text-xl font-bold tracking-tight text-[#D62828]">Kalana</span>
           </Link>
 
@@ -80,41 +91,62 @@ export default function Navbar() {
           {/* Mobile Menu Toggle */}
           <button 
             className="md:hidden text-[#D62828] z-50 p-2 bg-[#D62828]/5 rounded-full border border-[#D62828]/10 active:scale-95 transition-transform" 
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => setIsOpen(true)}
           >
-            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            <Menu className="w-5 h-5" />
           </button>
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Backdrop Overlay */}
       <div 
-        className={`md:hidden absolute top-full left-4 right-4 mt-2 bg-[#FFF3E0]/95 backdrop-blur-xl border border-[#D62828]/10 rounded-3xl p-6 flex flex-col gap-2 shadow-[0_20px_40px_rgb(214,40,40,0.08)] transition-all duration-300 origin-top ${
-          isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
+        className={`md:hidden fixed inset-0 bg-[#1A1A1A]/10 backdrop-blur-md transition-opacity duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] z-[60] ${
+          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setIsOpen(false)}
+      />
+
+      {/* Mobile Drawer (Slide from right) */}
+      <div 
+        className={`md:hidden fixed top-0 right-0 bottom-0 w-[80vw] max-w-[320px] bg-[#FFF3E0] border-l border-[#D62828]/10 shadow-[-20px_0_40px_rgba(26,26,26,0.1)] z-[70] flex flex-col transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+          isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {links.map((link) => {
-          const isActive = pathname === link.href;
-          return (
-            <Link 
-              key={link.name} 
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className={`px-5 py-4 rounded-2xl text-base font-semibold transition-all ${
-                isActive 
-                  ? "bg-[#D62828]/10 text-[#D62828]" 
-                  : "text-[#D62828]/70 hover:bg-[#D62828]/5 hover:text-[#D62828]"
-              }`}
-            >
-              {link.name}
-            </Link>
-          );
-        })}
-        <div className="pt-4 mt-2 border-t border-[#D62828]/10">
+        <div className="flex justify-between items-center p-6 pb-4 border-b border-[#D62828]/5">
+          <span className="text-xl font-bold tracking-tight text-[#D62828]">Menu</span>
+          <button 
+            className="text-[#D62828] p-2 bg-[#D62828]/5 rounded-full border border-[#D62828]/10 active:scale-95 transition-transform" 
+            onClick={() => setIsOpen(false)}
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+        
+        <div className="flex-1 overflow-y-auto py-6 px-6 flex flex-col gap-3">
+          {links.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link 
+                key={link.name} 
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className={`px-5 py-4 rounded-2xl text-base font-semibold transition-all ${
+                  isActive 
+                    ? "bg-[#D62828]/10 text-[#D62828]" 
+                    : "text-[#D62828]/70 hover:bg-[#D62828]/5 hover:text-[#D62828]"
+                }`}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
+        </div>
+
+        <div className="p-6 border-t border-[#D62828]/5">
           <Link 
             href="/kontak" 
             onClick={() => setIsOpen(false)}
-            className="flex items-center justify-center w-full px-6 py-4 bg-[#D62828] text-[#FFF3E0] rounded-2xl text-base font-bold shadow-lg shadow-[#D62828]/20"
+            className="flex items-center justify-center w-full px-6 py-4 bg-[#D62828] text-[#FFF3E0] rounded-2xl text-base font-bold shadow-lg shadow-[#D62828]/20 active:scale-95 transition-transform"
           >
             Mulai Proyek
           </Link>
