@@ -1,62 +1,67 @@
 "use client";
 
 import Link from 'next/link';
+import { Instagram, Twitter, Linkedin, Facebook } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center pt-32 pb-24 overflow-hidden bg-[#FFF3E0] font-sans selection:bg-[#D62828] selection:text-[#FFF3E0]">
-      <div className="max-w-6xl mx-auto px-6 md:px-12 relative z-10 flex flex-col items-center text-center">
+    <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 overflow-hidden bg-[#FFF3E0] font-sans selection:bg-[#D62828] selection:text-[#FFF3E0]">
+      
+      {/* Absolute positioning for the background soft waves if any */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/40 to-transparent pointer-events-none" />
+
+      {/* Main Content Container */}
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 relative z-10 flex flex-col items-center mt-12">
         
-        {/* Typography as focal point */}
+        {/* Massive Centered Heading */}
         <h1 
-          className="text-[#D62828] text-6xl md:text-8xl lg:text-[7.5rem] font-bold leading-[0.9] tracking-tighter mb-8 font-heading animate-fade-in-up"
-          style={{ animation: 'fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards' }}
+          className="text-[#1A1A1A] text-[15vw] md:text-[9rem] lg:text-[12rem] font-black leading-none tracking-tighter z-10 text-center animate-fade-in-up"
+          style={{ animation: 'fade-in-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards' }}
         >
-          Ubah Ide Jadi<br />
-          Produk Hebat.
+          KALANA
         </h1>
-        
-        <p 
-          className="text-[#D62828]/80 text-lg md:text-2xl leading-relaxed mb-12 max-w-2xl font-medium opacity-0"
-          style={{ animation: 'fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards' }}
-        >
-          Kami merancang dan membangun produk digital dengan kesederhanaan, presisi, dan keindahan yang fungsional.
+        <p className="text-[#D62828] font-bold tracking-[0.3em] uppercase text-sm md:text-base -mt-4 md:-mt-8 z-10 animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+          Elevate Your Digital Experience
         </p>
-        
-        {/* Clean, minimalist CTAs */}
-        <div 
-          className="flex flex-col sm:flex-row items-center gap-6 w-full sm:w-auto opacity-0"
-          style={{ animation: 'fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards' }}
-        >
-          <Link 
-            href="#konsultasi" 
-            className="w-full sm:w-auto px-10 py-4 bg-[#D62828] text-[#FFF3E0] rounded-full text-lg font-semibold hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300 shadow-xl shadow-[#D62828]/20"
-          >
-            Mulai Konsultasi
-          </Link>
-          <Link 
-            href="#paket" 
-            className="w-full sm:w-auto px-10 py-4 bg-transparent text-[#D62828] rounded-full text-lg font-semibold border-2 border-[#D62828]/20 hover:border-[#D62828] active:scale-[0.98] transition-all duration-300"
-          >
-            Lihat Layanan
-          </Link>
+
+        {/* Central Product/Feature Image */}
+        <div className="relative w-full max-w-2xl md:max-w-4xl -mt-16 md:-mt-32 z-20 flex justify-center animate-fade-in-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+          {/* Subtle pedestal or shadow effect */}
+          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-3/4 h-12 bg-black/5 blur-xl rounded-full" />
+          <img 
+            src="/sites/www.kalanalabs.com-f2e239fb/root-8a5edab2/images/kalanalabsmockup.webp" 
+            alt="Kalana Labs Digital Product" 
+            className="relative w-[80%] md:w-[70%] object-contain drop-shadow-2xl hover:-translate-y-4 transition-transform duration-700"
+          />
         </div>
+
+        {/* Bottom Split Content (Left: Text, Right: Socials) */}
+        <div className="w-full flex flex-col-reverse md:flex-row justify-between items-end md:items-center mt-12 md:mt-0 px-4 md:px-12 z-30 animate-fade-in-up" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
+          
+          <div className="max-w-xs text-left mt-8 md:mt-0">
+            <p className="text-[#1A1A1A]/70 text-sm font-medium leading-relaxed">
+              We design and build digital products with simplicity, precision, and functional beauty for forward-thinking brands.
+            </p>
+            <Link href="#kontak" className="inline-block mt-4 text-[#D62828] font-bold text-sm hover:underline underline-offset-4 decoration-2">
+              Discover Kalana &rarr;
+            </Link>
+          </div>
+
+          <div className="flex items-center gap-6">
+            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><Instagram className="w-5 h-5" /></Link>
+            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><Twitter className="w-5 h-5" /></Link>
+            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><Facebook className="w-5 h-5" /></Link>
+            <Link href="#" className="text-[#1A1A1A]/60 hover:text-[#D62828] transition-colors"><Linkedin className="w-5 h-5" /></Link>
+          </div>
+
+        </div>
+
       </div>
-      
-      {/* Subtle bottom border line to separate sections smoothly */}
-      <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#D62828]/10 to-transparent" />
-      
-      {/* Required Keyframes (ideally in global css but kept here for strict scoping/simplicity) */}
+
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes fade-in-up {
-          0% {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          0% { opacity: 0; transform: translateY(40px); }
+          100% { opacity: 1; transform: translateY(0); }
         }
       `}} />
     </section>
