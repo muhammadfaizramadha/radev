@@ -23,26 +23,26 @@ export default function Process() {
   ];
 
   return (
-    <section id="proses" className="py-24 bg-white text-[#0b0c10] font-sans">
+    <section id="proses" className="py-24 bg-[#FFF3E0] text-[#0b0c10] font-sans">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-heading leading-tight mb-6">
             4 Langkah Mudah Memulai Proyek Anda
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-[#1A1A1A]/70">
             Kami akan memandu Anda secara transparan dari briefing kebutuhan hingga serah terima melalui 4 langkah praktis.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="relative p-8 rounded-3xl bg-[#f8f9fc] border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="text-6xl font-black text-blue-100 mb-6 font-heading">
+            <div key={index} className="relative p-8 rounded-3xl bg-[#FFF3E0] border border-[#1A1A1A]/10 hover:shadow-lg transition-shadow">
+              <div className="text-6xl font-black text-[#D62828] mb-6 font-heading">
                 {step.num}
               </div>
               <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-[#1A1A1A]/70 leading-relaxed">
                 {step.desc}
               </p>
             </div>

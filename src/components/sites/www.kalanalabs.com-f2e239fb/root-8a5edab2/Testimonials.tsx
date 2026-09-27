@@ -53,7 +53,7 @@ export default function Testimonials() {
               </p>
               
               <div className="flex items-center gap-4 mt-auto">
-                <div className="w-12 h-12 rounded-full bg-[#D62828]/20 flex items-center justify-center text-blue-400 font-bold text-xl uppercase">
+                <div className="w-12 h-12 rounded-full bg-[#D62828]/20 flex items-center justify-center text-[#D62828] font-bold text-xl uppercase">
                   {testimonial.name.charAt(0)}
                 </div>
                 <div>

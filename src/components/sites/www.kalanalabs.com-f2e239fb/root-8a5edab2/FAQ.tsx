@@ -44,7 +44,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-24 bg-white text-[#0b0c10] font-sans">
+    <section className="py-24 bg-[#FFF3E0] text-[#0b0c10] font-sans">
       <div className="max-w-4xl mx-auto px-6">
         
         <div className="flex flex-col items-center text-center mb-16">
@@ -59,7 +59,7 @@ export default function FAQ() {
             return (
               <div 
                 key={index} 
-                className={`border rounded-2xl transition-colors duration-300 ${isOpen ? 'bg-blue-50/50 border-blue-100' : 'bg-white border-gray-100 hover:border-gray-200'}`}
+                className={`border rounded-2xl transition-colors duration-300 ${isOpen ? 'bg-[#1A1A1A]/5 border-[#1A1A1A]/10' : 'bg-[#FFF3E0] border-[#1A1A1A]/10 hover:border-[#1A1A1A]/10'}`}
               >
                 <button 
                   onClick={() => toggleOpen(index)}
@@ -67,15 +67,15 @@ export default function FAQ() {
                   aria-expanded={isOpen}
                 >
                   <span className="flex items-center gap-4 text-lg font-bold">
-                    <span className="text-blue-400 font-heading text-xl">{faq.num}</span>
+                    <span className="text-[#D62828] font-heading text-xl">{faq.num}</span>
                     {faq.question}
                   </span>
-                  <ChevronDown className={`w-5 h-5 text-[#D62828]/70 transition-transform duration-300 ${isOpen ? 'rotate-180 text-blue-600' : ''}`} />
+                  <ChevronDown className={`w-5 h-5 text-[#D62828]/70 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#D62828]' : ''}`} />
                 </button>
                 <div 
                   className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
                 >
-                  <p className="text-gray-600 leading-relaxed pl-10 border-l-2 border-blue-100 ml-3">
+                  <p className="text-[#1A1A1A]/70 leading-relaxed pl-10 border-l-2 border-[#1A1A1A]/10 ml-3">
                     {faq.answer}
                   </p>
                 </div>
